@@ -1,0 +1,22 @@
+{
+  "name": "webpage-1",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "\"Responsive\"",
+    "\"NodeJS\"",
+    "\"HTML\"",
+    "\"CSS\"",
+    "\"Web",
+    "Design\""
+  ],
+  "author": "Corban Warren",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
