@@ -3,6 +3,8 @@ $secondary-color: #13a8ed;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
 $background-opacity: 0.8;
+$profile-image: url(../img/portrait2.jpg);
+$profile-image-small: url(../img/portrait2_small.jpg);
 
 @mixin easeOut {
   transition: all 1.5s ease-out;
@@ -25,5 +27,30 @@ $background-opacity: 0.8;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+//Media Query Mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 759px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }
